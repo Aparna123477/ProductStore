@@ -12,7 +12,6 @@
   <img src="/frontend/assests/preview.png" alt="Product Store UI" width="850px" style="border-radius: 10px; box-shadow: 0px 4px 12px rgba(0,0,0,0.3);" />
 </div>
 
-> **Tip:** Save your screenshot in the root folder as `preview.png` (or inside an `assets/` directory and update the path).
 
 ---
 
@@ -45,5 +44,6 @@
 ### 1. Clone the Repository
 
 ```bash
-git clone [https://github.com/your-username/product-store.git](https://github.com/your-username/product-store.git)
+git clone [https://github.com/your-username/product-store.git]
+(https://github.com/your-username/product-store.git)
 cd product-store
