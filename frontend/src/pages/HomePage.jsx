@@ -1,15 +1,18 @@
 import { Container, VStack, Text, SimpleGrid } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
+import { useAuthStore } from "../store/auth";
 import { useEffect } from "react";
 import { useProductStore } from "../store/product";
 import ProductCard from "../components/ProductCard";
 const HomePage = () => {
   const { fetchProducts, products = [] } = useProductStore();
+  const { isAuthenticated } = useAuthStore();
 
   useEffect(() => {
     fetchProducts();
   }, [fetchProducts]);
-  console.log("products",products);
+  if (!isAuthenticated) return <Navigate to="/login" replace />;
+
 
   return (
     <Container maxW="container.xl" py={12}>
