@@ -4,6 +4,7 @@ import { useAuthStore } from "../store/auth";
 import { useEffect } from "react";
 import { useProductStore } from "../store/product";
 import ProductCard from "../components/ProductCard";
+import ChatAssistant from "../components/ChatAssistant";
 const HomePage = () => {
   const { fetchProducts, products = [] } = useProductStore();
   const { isAuthenticated } = useAuthStore();
@@ -52,6 +53,7 @@ const HomePage = () => {
           </Text>
         )}
       </VStack>
+      <ChatAssistant />
     </Container>
   );
 };

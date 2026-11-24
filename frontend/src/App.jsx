@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage";
 import CreatePage from "./pages/CreatePage";
 import SignupPage from "./pages/SignupPage";
 import LoginPage from "./pages/LoginPage";
+import ProductDetailPage from "./pages/ProductDetailPage";
 import { useAuthStore } from "./store/auth";
 
 import { ToastContainer } from "react-toastify";
@@ -24,7 +25,6 @@ function App() {
   }, [initAuth]);
 
   // jab tak check na ho jaye, kuch render mat karo
-  // (warna reload pe ek second ke liye /login pe redirect ho jayega)
   if (!authChecked) return null;
 
   return (
@@ -35,6 +35,7 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/create" element={<PrivateRoute element={<CreatePage />} />} />
+        <Route path="/product/:id" element={<PrivateRoute element={<ProductDetailPage />} />} />
       </Routes>
       <ToastContainer />
     </div>
