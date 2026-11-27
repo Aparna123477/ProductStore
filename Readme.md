@@ -227,7 +227,7 @@ ProductStore/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/product-store.git
+git clone https://github.com/Aparna123477/product-store.git
 cd product-store
 ```
 
