@@ -83,7 +83,7 @@ const ChatAssistant = () => {
   <HStack
     key={p._id}
     as={Link}
-    to={`/product/₹{p._id}`}
+    to={`/product/${p._id}`}
     mt={2} p={2} rounded="md" borderWidth="1px" spacing={3}
     _hover={{ borderColor: "blue.400", bg: "blackAlpha.100" }}
   >

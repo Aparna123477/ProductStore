@@ -66,7 +66,7 @@ const ProductDetailPage = () => {
             <Box p={6}>
               <Heading as="h1" size="lg" mb={2}>{product.name}</Heading>
               <Text fontWeight="bold" fontSize="2xl" color={textColor} mb={4}>
-                ₹{product.price}
+                ${product.price}
               </Text>
               <Text color={textColor} whiteSpace="pre-wrap">
                 {product.description || "No description available."}
